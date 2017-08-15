@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 	config.vm.provider "virtualbox" do |vbox|
 
 			## Hipervisor configuration
-			vbox.nam = "Vagrant_test_01"
+			vbox.name = "Vagrant_test_01"
 			vbox.gui = false
 			vbox.cpus = 1
 			vbox.memory = 1024
@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
 
 	## BOX configuration
   config.vm.box = "ubuntu/xenial64"
-	config.vm.box_check_updates = true
+	config.vm.box_check_update = true
 	config.vm.hostname = "monitoring"
 	
 	## Network configuration
